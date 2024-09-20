@@ -95,7 +95,7 @@ class ViewController: UIViewController {
                 present(alert1, animated: true)
             } else {
                 let alert = UIAlertController(title: title, message:"Şuanki skorun: \(score)", preferredStyle: .alert)
-                let alertButton = UIAlertAction(title: "Decam", style: .default, handler: asQuestion)
+                let alertButton = UIAlertAction(title: "Devam", style: .default, handler: asQuestion)
                 alert.addAction(alertButton)
                 present(alert, animated: true)
             }
