@@ -22,6 +22,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //NavigationBAR
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.action, target: self, action: #selector(tapClicked))
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks, target: self, action: #selector(tapClickedTwo))
+        
         // HighScor Check
         let storedHigScore = UserDefaults.standard.object(forKey: "highscoree")
         
@@ -100,6 +105,24 @@ class ViewController: UIViewController {
                 present(alert, animated: true)
             }
         }
+    
+    @objc func tapClicked(){
+        let puan = "Şuan ki skor: \(self.score)"
+        let vc = UIActivityViewController(activityItems: [puan], applicationActivities: [])
+        present(vc, animated: true)
+        
+        
+        
+    }
+    
+    @objc func tapClickedTwo(){
+        let not = "Bu uygulamayı çok beğendim sende aramıza katıl ve beraber yarışalım"
+        let vc = UIActivityViewController(activityItems: [not], applicationActivities: [])
+        present(vc, animated: true)
+        
+        
+        
+    }
     
 }
 
