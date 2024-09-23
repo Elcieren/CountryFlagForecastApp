@@ -116,7 +116,7 @@ class ViewController: UIViewController {
     }
     
     @objc func tapClickedTwo(){
-        let not = "Bu uygulamayı çok beğendim sende aramıza katıl ve beraber yarışalım"
+        let not = "Bu uygulamayı çok beğendimmm sende aramıza katıl ve beraber yarışalım"
         let vc = UIActivityViewController(activityItems: [not], applicationActivities: [])
         present(vc, animated: true)
         
