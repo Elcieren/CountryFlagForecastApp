@@ -4,7 +4,7 @@ Bu uygulama, kullanıcıların dünya ülkelerinin bayraklarını tahmin etmesin
 </details> 
 
 <details>
-<summary><h3>Sprint 1 - App Görseller</h3></summary>
+<summary><h3>App Görseller</h3></summary>
   <table style="width: 100%;">
     <tr>
       <td colspan="3" style="text-align: center;"><h2>Ana Arayüz </h2></td>
