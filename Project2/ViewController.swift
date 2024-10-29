@@ -75,6 +75,13 @@ class ViewController: UIViewController {
             
             if sender.tag == correctAnswer {
                 title = "Doğru"
+                UIView.animate(withDuration: 0.2, animations: {
+                            sender.transform = CGAffineTransform(scaleX: 1.2, y: 1.2) // İlk büyüme
+                        }, completion: { _ in
+                            UIView.animate(withDuration: 0.2, animations: {
+                                sender.transform = CGAffineTransform(scaleX: 1.0, y: 1.0) // Orijinal boyuta geri dönüş
+                            })
+                        })
                 score += 1
             } else {
                 title = "Yanlış"
